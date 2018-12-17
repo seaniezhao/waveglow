@@ -12,7 +12,7 @@ using only a single network, trained using only a single cost function:
 maximizing the likelihood of the training data, which makes the training
 procedure simple and stable.
 
-Our [PyTorch] implementation produces audio samples at a rate of 1200
+Our [PyTorch] implementation produces audio samples at a rate of 2750
 kHz on an NVIDIA V100 GPU. Mean Opinion Scores show that it delivers audio
 quality as good as the best publicly available WaveNet implementation.
 
@@ -29,7 +29,9 @@ Visit our [website] for audio samples.
    git submodule update
    ```
 
-2. Install requirements (pytorch 1.0 and others) `pip3 install -r requirements.txt`
+2. Install [PyTorch 1.0]  
+
+3. Install other requirements `pip3 install -r requirements.txt`
 
 ## Generate audio with our pre-existing model
 
@@ -73,7 +75,7 @@ with fused residual and skip connections.
 
 [//]: # (TODO)
 [//]: # (PROVIDE INSTRUCTIONS FOR DOWNLOADING LJS)
-[//]: # (TEST INSTRUCTIONS)
+[pytorch 1.0]: https://github.com/pytorch/pytorch#installation
 [website]: https://nv-adlr.github.io/WaveGlow
 [paper]: https://arxiv.org/abs/1811.00002
 [WaveNet implementation]: https://github.com/r9y9/wavenet_vocoder
